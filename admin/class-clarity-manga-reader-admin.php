@@ -450,7 +450,6 @@ class Clarity_Manga_Reader_Admin {
 			<?php
 				$i++;
 			}
-			include plugin_dir_path( __FILE__ ) . 'js/check.title.php';
 			?>
 
 			</div><!-- chapters -->
