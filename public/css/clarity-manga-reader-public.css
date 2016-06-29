@@ -1,0 +1,72 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+a#next-page,
+a#prev-page {
+    margin-right: 10px;
+}
+
+#jump {
+	margin-bottom: 45px;
+}
+
+select {
+	margin: 0 10px;
+}
+
+.chapter-link {
+	padding: 5px;
+}
+
+.chapter-link a:hover {
+	font-weight: bold;
+}
+
+ .volume-number {
+     font-weight: bold;
+     margin-top: 1rem;
+     color: #BDBDBD;
+ }
+
+
+.current-image {
+	 text-align: center;
+	 margin: auto;
+ }
+
+.current-image a {
+	display: inline-block;
+}
+
+ .float-right {
+ 	float: right;
+ }
+
+ .float-left {
+    float: left;
+ }
+
+.center {
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+
+ #manga-nav {
+     padding: 1rem;
+     background: #ddd;
+     margin-bottom: 2rem;
+     overflow: hidden;
+ }
+
+ #chapter-select {
+ 	margin-right: 15px;
+ }
+
+ .manga-image {
+ 	border: 1px solid #ddd;
+ 	margin: auto;
+ 	text-align: center;
+ }

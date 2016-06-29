@@ -1,0 +1,241 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#clarity-manga-reader h2 {
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+}
+
+ .upload-finish-notice {
+	margin: 1rem 2rem;
+ }
+
+.close-progress {
+	cursor: pointer;
+	color: #000;
+	font-weight: bold;
+}
+
+.close-progress:hover {
+	text-decoration: underline;
+	background: #ff0000;
+	color: #fff;
+}
+
+.q-image {
+	margin: 5px;
+}
+
+.q-cancel {
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 5px;
+}
+.q-cancel:hover {
+	    background: #eaeaea;
+	    border-radius: 5px;
+}
+
+.edit-container {
+	display: none;
+	text-align: right;
+}
+
+ .chapter .edit, .chapter .del {
+     float: right;
+ }
+
+.chapter .dashicons, .chapter .dashicons-before:before {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    vertical-align: middle;
+	padding: 2px 0;
+}
+
+ .close-edit {
+	background: #444!important;
+	color: #fff!important;
+	vertical-align: baseline!important;
+ }
+
+.upload-progress {
+	margin: 0 20px;
+}
+
+.progress-bar {
+	position: relative;
+	transition: all ease 0.7s;
+	margin: 25px auto;
+    background: #26c375;
+	height: 30px;
+}
+
+.progress-label {
+    position: relative;
+    text-align: center;
+    top: 6px;
+    font-weight: bold;
+	color: #fff;
+}
+
+.chapters-container {
+    margin-left: -12px;
+    border-bottom: 1px solid #ddd;
+}
+
+#chapter-form {
+	margin: 1rem;
+    display: inline-block;
+}
+
+.input-box {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+.field-info {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#add-chapter {
+    width: 100px;
+    border: 1px solid #08668E;
+    background: #0083BA;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.errors {
+    margin: 15px;
+    padding: 15px;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    background-color: #f2dede;
+}
+
+#add_manga_chapters,
+#get_manga_chapters {
+    display: none;
+}
+
+#chapter-form input {
+    margin-bottom: 10px;
+}
+
+#chapter-form label {
+    display: block;
+}
+
+#chapters-container .cmr-chapters__manage .button,
+#added-chapters .cmr-chapters__manage .button {
+    margin: 1px 10px;
+    height: 40px;
+    padding: 5px;
+}
+
+
+.new-chapter {
+    border-left: 10px solid #333;
+}
+
+.cmr-chapters__manage {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.chapter {
+    overflow: hidden;
+}
+
+.cmr-chapters__manage {
+    overflow: hidden;
+}
+
+.cmr-chapters__manage:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.ch-image:first-child {
+    margin-top: 2rem;
+	border-top: 1px solid #9E9E9E;
+}
+
+.ch-image:last-child {
+    margin-bottom: 2rem;
+}
+
+.ch-image {
+    padding: 0.5rem;
+    overflow: hidden;
+    margin: 0 2rem;
+    background: #e5e5e5;
+    transition: all ease 0.4s;
+	border-left: 1px solid #9E9E9E;
+	border-right: 1px solid #9E9E9E;
+	border-bottom: 1px solid #9E9E9E;
+}
+
+.ch-image:hover {
+    background: #676767;
+    color: #fff;
+}
+
+
+.cmr-chapters__manage {
+    padding: 0.5rem;
+    background: #F1F1F1;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.ch-name {
+	font-weight: bold;
+}
+
+.ch-image a {
+    color: #333;
+    text-decoration: none;
+}
+.ch-image:hover a {
+    color: #fff;
+}
+
+.ch-image:hover {
+    background: #676767;
+    color: #fff;
+}
+
+.chapter-text{
+    padding: 0.4rem;
+	border-bottom: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.delete_image,
+.delete_chapter {
+    background: #F2F2F2;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 0.4rem;
+    float: right;
+    cursor: pointer;
+}
+.delete_image:hover,
+.delete_chapter:hover {
+    background: #2FB1E4;
+    color: #fff;
+}
+
+#list-images {
+    margin: 2rem;
+}
