@@ -101,18 +101,18 @@ class Clarity_Manga_Reader_Public {
 	}
 
 
-
-	public function cmr_chaptersListShortcode($atts){
+	public function cmr_chaptersListShortcode($attributes){
 		global $post;
 		$manage = new manage();
 		$object = $manage->getMangaObject( $post->ID );
-		$atts = array(
-			'before' => '<h2>Read</h2><div class="chapters-container">',
-			'after'   => '</div>',
-		);
+		$atts = shortcode_atts( array(
+			'before' => '<div class="chapters-container">',
+			'after'  => '</div>',
+			'title'  => 'Chapters',
+		), $attributes );
 		if ($object) {
 			$previous_volume = '';
-			$contents = $atts['before'];
+			$contents = '<h2>' . $atts['title'] . '</h2>' . $atts['before'];
 
 			foreach ( $object as $o ) {
 				if ( !empty( $manage->getChapterImages( $o->id ) ) ) {
@@ -123,12 +123,13 @@ class Clarity_Manga_Reader_Public {
 						$vol = '<div class="volume-number">Volume ' . $o->chapter_volume . '</div>';
 					}
 					$contents .= $vol;
+					$contents .= '<div class="ch-link">';
 					$contents .= '<a href="' . get_site_url() . '/';
 					$contents .= $reader . '/' . $o->post_name;
 					$contents .= '/chapter-' . $o->chapter_number;
 					$contents .= '/page-1">Chapter ';
 					$contents .= $o->chapter_number . ': ' . stripslashes( $o->chapter_name );
-					$contents .= '</a>';
+					$contents .= '</a></div>';
 					$previous_volume = $current_volume;
 				}
 			}
