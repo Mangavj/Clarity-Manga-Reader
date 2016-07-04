@@ -1,6 +1,9 @@
 # Clarity Manga Reader
 Clarity Manga Reader is WordPress plugin that turns your site into a manga reader.
 
+# Demo site
+https://claritymanga.xyz
+
 ## Installation
 * Download zip
 * Go to your dashboard > Plugins > Add New > Upload Plugin and upload the plugin
