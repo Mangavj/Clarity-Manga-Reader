@@ -7,7 +7,7 @@
 		var all_manga_dir   =  obj.all_manga_dir;
 		var mid             = $( '#manga-title' ).attr( 'data-mid' );
 		var url             = window.location.href;
-		var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+(\/)?');
+		var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+\/');
 		var site_url        = url.replace( re, '$1' );
 		var manga_slug      = url.replace( re, '$2' );
 		var current_chapter = url.replace( re, '$3' );
@@ -37,7 +37,7 @@
 
 		function getNextPage(page, goto) {
 			var url             = window.location.href;
-			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+(\/)?');
+			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+\/');
 			var site_url        = url.replace( re, '$1' );
 			var manga_slug      = url.replace( re, '$2' );
 			var current_chapter = url.replace( re, '$3' );
@@ -188,7 +188,7 @@
 		function nextPage()
 		{
 			var url             = window.location.href;
-			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+(\/)?');
+			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+\/');
 			var current_image   = url.replace( re, '$4' );
 			$('html, body').animate({
 				scrollTop: $("#jump").offset().top
@@ -203,7 +203,7 @@
 		function prevPage()
 		{
 			var url             = window.location.href;
-			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+(\/)?');
+			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+\/');
 			var current_image   = url.replace( re, '$4' );
 			$('html, body').animate({
 				scrollTop: $("#jump").offset().top
@@ -214,7 +214,7 @@
 
 		window.addEventListener( 'popstate', function (e) {
 			var url             = window.location.href;
-			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+(\/)?');
+			var re              = new RegExp('(.*)\/' + obj.read + '\/+(.*)+\/chapter-+(.*)+\/page-+(.*)+\/');
 			var site_url        = url.replace( re, '$1' );
 			var manga_slug      = url.replace( re, '$2' );
 			var current_chapter = url.replace( re, '$3' );
