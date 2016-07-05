@@ -117,6 +117,7 @@ class Clarity_Manga_Reader_Public {
 			foreach ( $object as $o ) {
 				$has_images = $manage->getChapterImages( $o->id );
 				if ( $has_images[0]->id ) {
+					$current_volume = $o->chapter_volume;
 					$reader = get_option('cmr_reader_page');
 					$vol = '';
 					if ( $current_volume != $previous_volume && $current_volume != 0 ) {
